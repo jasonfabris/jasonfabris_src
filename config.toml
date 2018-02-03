@@ -9,11 +9,11 @@ canonifyURLS = true
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
 [Params]
-    tagline = "Jason's Data and Art Site"
+    tagline = "Data, Art, Data Art"
     author = "Jason Fabris"
     description = "Jason does things with art, code, data, sounds."
-    logoBig = "/images/osprey-logo.png"
-    logoSmall = "/images/osprey-logo.png"
+    logoBig = "/images/biglogo.png"
+    logoSmall = "/images/smalllogo.png"
     favicon = "favicon.ico"
     opengraphImage = "/images/osprey.png"
     twitter = "jasonfabris"
