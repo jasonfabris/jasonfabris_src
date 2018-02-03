@@ -4,6 +4,6 @@ title: "Cross Section 1"
 image: "wobbly_10by10.png"
 alt: "First cross-section"
 color: ""
-link1: "https://stabris.com"
-link2: "https://github.com/jasonfabris"
+link1: ""
+link2: ""
 ---
