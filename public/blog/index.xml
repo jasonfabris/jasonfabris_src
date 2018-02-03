@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Jason Fabris</title>
+    <link>http://jasonfabris.com/blog/</link>
+    <description>Recent content in Blogs on Jason Fabris</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Sat, 13 Jan 2018 14:30:36 -0500</lastBuildDate>
+    
+	<atom:link href="http://jasonfabris.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RStudio Snippet - Table to Clipboard</title>
+      <link>http://jasonfabris.com/blog/clippy/</link>
+      <pubDate>Sat, 13 Jan 2018 14:30:36 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/blog/clippy/</guid>
+      <description>A common thing I need to do at work is paste a small table into an email or presentation.
+I&amp;rsquo;m a bit picky with formatting. I wanted to be able to control shading, borders, and number formatting ($, comma separators, %, # of digits).
+I can do that really, really quickly in Excel. I haven&amp;rsquo;t found a quick way to do all of that in R. (see discussion here: https://community.rstudio.com/t/output-nice-looking-formatted-tables/1084)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <title>
+            
+            
+                RStudio Snippet - Table to Clipboard | Jason Fabris
+            
+        </title>
+
+        <meta name="title" content="RStudio Snippet - Table to Clipboard | Jason Fabris">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer-when-downgrade">
+        <meta name="generator" content="">
+        <base href="http://jasonfabris.com/">
+        <meta name="description" content="Jason does things with art, code, data, sounds.">
+        
+        <meta name="author" content="Jason Fabris">
+        
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@jasonfabris">
+        <meta name="twitter:creator" content="@jasonfabris">
+        
+        <meta property="og:title" content="RStudio Snippet - Table to Clipboard | Jason Fabris">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://jasonfabris.com/">
+        <meta property="og:image" content="http://jasonfabris.com//images/osprey.png">
+        <meta property="og:description" content="Jason does things with art, code, data, sounds.">
+        
+
+        
+        <link rel="icon" type="image/png" sizes="16x16" href="http://jasonfabris.com/images/logo/favicon.ico">
+        <meta name="theme-color" content="#FFF">
+        
+
+        <link rel="canonical" href="http://jasonfabris.com/blog/clippy/">
+        
+        <link rel="stylesheet" href="http://jasonfabris.com//styles/main.css" type="text/css">
+        
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/github.min.css">
+        
+    </head>
+
+    <body>
+        
+
+        
+
+        <nav class="row middle-xs center-xs">
+            <div class="col-xs-6 col-sm-1 logo">
+                <a href="http://jasonfabris.com/"><img src="http://jasonfabris.com/images/smalllogo.png" alt="Jason Fabris"></a>
+            </div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="http://jasonfabris.com/#blog">Blog</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="http://jasonfabris.com/#work">Art</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="http://jasonfabris.com/#about">About</a></h3></div>
+            
+            <div class="col-xs-3 col-sm-2"><h3><a href="http://jasonfabris.com/#contact">Contact</a></h3></div>
+            
+            <div class="col-xs-6 col-sm-1 nav-toggle">
+                <a href="" class="nav-icon" onclick="return false"><img src="http://jasonfabris.com/images/icon-menu.png" alt="Open Menu"><img src="http://jasonfabris.com/images/icon-x.png" alt="Close Menu" style="display: none;"></a>
+            </div>
+        </nav>
+        <section class="nav-full row middle-xs center-xs">
+            <div class="col-xs-12">
+                <div class="row middle-xs center-xs">
+                    
+                    <div class="col-xs-12"><h1><a href="http://jasonfabris.com/#blog">Blog</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="http://jasonfabris.com/#work">Art</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="http://jasonfabris.com/#about">About</a></h1></div>
+                    
+                    <div class="col-xs-12"><h1><a href="http://jasonfabris.com/#contact">Contact</a></h1></div>
+                    
+                </div>
+            </div>
+        </section>
+        <main>
+
+
+    <section class="container">
+        <section class="content">
+            <h1> RStudio Snippet - Table to Clipboard </h1>
+
+            <div class="sub-header">
+                January 2018 · 1 minute read
+            </div>
+
+            <article class="entry-content">
+                <p>A common thing I need to do at work is paste a small table into an email or presentation.</p>
+
+<p>I&rsquo;m  a bit picky with formatting. I wanted to be able to control shading, borders, and number formatting ($, comma separators, %, # of digits).</p>
+
+<p>I can do that really, really quickly in Excel. I haven&rsquo;t found a quick way to do all of that in R.
+(see discussion here: <a href="https://community.rstudio.com/t/output-nice-looking-formatted-tables/1084">https://community.rstudio.com/t/output-nice-looking-formatted-tables/1084</a>)</p>
+
+<p>Don&rsquo;t get me wrong, there are <em>lots</em> of options, and I use some of the stuff mentioned in that discussion - especially when it&rsquo;s going into a script that gets routinely re-run (e.g. monthly updates). But for a one-off analysis, it&rsquo;s often way less work to paste it into Excel, click some buttons and paste the result as an image so it looks like I want it to look.</p>
+
+<p>Eventually I caved in and made a snippet in RStudio. I pipe the results of my table-making into the snippet, hit ctrl-V in Excel, format, then copy as image (I put that on the quick-access toolbar).</p>
+
+<pre><code class="language-r">snippet clippy 
+        write.table(${1:.}, file=&quot;clipboard&quot;, sep=&quot;\t&quot;, row.names=FALSE)
+</code></pre>
+
+<p>In use:</p>
+
+<pre><code class="language-r">mydata %&gt;% 
+    group_by(event_year, office) %&gt;%
+        summarise(caseload = sum(cases)) %&gt;%
+        mutate(perc_tot = caseload / sum(caseload)) %&gt;% 
+        select(-caseload) %&gt;% 
+        spread(office, perc_tot) %&gt;% 
+  write.table(., file=&quot;clipboard&quot;, sep=&quot;\t&quot;, row.names=FALSE)
+</code></pre>
+
+<p>The result:</p>
+
+<p><img src="http://jasonfabris.com/blog/exceltbl.png" alt="tbl" /></p>
+
+            </article>
+
+            <div class="pagination">
+                
+                
+            </div>
+        </section>
+        <br>
+        <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        (function() {
+            
+            
+            if (window.location.hostname == "localhost")
+                return;
+            var disqus_shortname = '';
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view comments powered by <a href="http://disqus.com/?ref_noscript">Disqus</a>.</noscript>
+</section>
+
+    </section>
+
+        </main>
+        <footer class="row middle-xs center-xs">
+            
+            <div class="col-xs-3 col-md-2"><a href="https://github.com/jasonfabris">GitHub</a></div>
+            
+            
+            <div class="col-xs-3 col-md-2"><a href="https://linkedin.com/in/jasonfabris">LinkedIn</a></div>
+            
+            
+            <div class="col-xs-3 col-md-2"><a href="https://twitter.com/jasonfabris">Twitter</a></div>
+            
+            
+            <div class="col-xs-12">
+                
+                Copyright &copy; 2018 Jason Fabris.
+                
+                
+                Theme developed by <a href="https://tomanistor.com">Toma Nistor</a>.
+                
+            </div>
+            
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+            
+            <script src="http://jasonfabris.com/scripts/main.js" type="text/javascript"></script>
+            
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+        </footer>
+    </body>
+</html>
+

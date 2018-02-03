@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galleries on Jason Fabris</title>
+    <link>http://jasonfabris.com/gallery/</link>
+    <description>Recent content in Galleries on Jason Fabris</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Sun, 14 Jan 2018 15:48:14 -0500</lastBuildDate>
+    
+	<atom:link href="http://jasonfabris.com/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cross2</title>
+      <link>http://jasonfabris.com/gallery/cross2/</link>
+      <pubDate>Sun, 14 Jan 2018 15:48:14 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R2Sq</title>
+      <link>http://jasonfabris.com/gallery/r2sq/</link>
+      <pubDate>Sun, 14 Jan 2018 15:48:14 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/r2sq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Trig</title>
+      <link>http://jasonfabris.com/gallery/cross-sec2/</link>
+      <pubDate>Sun, 14 Jan 2018 14:04:13 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross-sec2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross Section 1</title>
+      <link>http://jasonfabris.com/gallery/cross-sec1/</link>
+      <pubDate>Wed, 10 Jan 2018 21:35:17 -0700</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross-sec1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

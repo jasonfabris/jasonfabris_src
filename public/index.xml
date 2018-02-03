@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jason Fabris</title>
+    <link>http://jasonfabris.com/</link>
+    <description>Recent content on Jason Fabris</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Sun, 14 Jan 2018 15:48:14 -0500</lastBuildDate>
+    
+	<atom:link href="http://jasonfabris.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cross2</title>
+      <link>http://jasonfabris.com/gallery/cross2/</link>
+      <pubDate>Sun, 14 Jan 2018 15:48:14 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R2Sq</title>
+      <link>http://jasonfabris.com/gallery/r2sq/</link>
+      <pubDate>Sun, 14 Jan 2018 15:48:14 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/r2sq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Trig</title>
+      <link>http://jasonfabris.com/gallery/cross-sec2/</link>
+      <pubDate>Sun, 14 Jan 2018 14:04:13 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross-sec2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RStudio Snippet - Table to Clipboard</title>
+      <link>http://jasonfabris.com/blog/clippy/</link>
+      <pubDate>Sat, 13 Jan 2018 14:30:36 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/blog/clippy/</guid>
+      <description>A common thing I need to do at work is paste a small table into an email or presentation.
+I&amp;rsquo;m a bit picky with formatting. I wanted to be able to control shading, borders, and number formatting ($, comma separators, %, # of digits).
+I can do that really, really quickly in Excel. I haven&amp;rsquo;t found a quick way to do all of that in R. (see discussion here: https://community.rstudio.com/t/output-nice-looking-formatted-tables/1084)</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://jasonfabris.com/about/</link>
+      <pubDate>Sat, 13 Jan 2018 13:54:57 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/about/</guid>
+      <description>I like to make noises and pictures. When I&amp;rsquo;m not doing that, I direct an operational analytics team and spend a lot of time staring at R, Excel, and Tableau.
+Unless I am sleeping, which I try to do as much as possible.
+I suffer from a profound, cultivated lack of focus.</description>
+    </item>
+    
+    <item>
+      <title>Cross Section 1</title>
+      <link>http://jasonfabris.com/gallery/cross-sec1/</link>
+      <pubDate>Wed, 10 Jan 2018 21:35:17 -0700</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/cross-sec1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
