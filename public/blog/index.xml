@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>true</copyright>
-    <lastBuildDate>Sat, 13 Jan 2018 14:30:36 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 09 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jasonfabris.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dates That Take Up Less Space: Formatting the x-axis in ggplot</title>
+      <link>http://jasonfabris.com/blog/dteformat/</link>
+      <pubDate>Fri, 09 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jasonfabris.com/blog/dteformat/</guid>
+      <description>Work compels me to look at a lot of charts of stuff changing over time. The workflow is good for the purpose - an R script gets the data from a database, does a bunch of stuff, and outputs a bunch of image files of ggplot charts.
+Of course ggplot is great and it works really well for most of my work-charting needs. But, like any tool, there are some frustrations.</description>
+    </item>
+    
+    <item>
+      <title>How My Fine Art Degree Helps Me Be A Good Analyst</title>
+      <link>http://jasonfabris.com/blog/fineart/</link>
+      <pubDate>Sat, 24 Feb 2018 19:01:35 -0500</pubDate>
+      
+      <guid>http://jasonfabris.com/blog/fineart/</guid>
+      <description>Among the good data people I know, there is only one thing that seems universal. Every one of them is constantly curious. They want to learn knew things. What should I learn next? Python? R? SQL? Multilevel modeling? Bayesian models? Simulations? TensorFlow?
+You know what never makes the list? Art.
+That&amp;rsquo;s a shame. While getting a degree in fine art, I was explicitly taught and had to practice a number of skills that are directly applicable and useful.</description>
+    </item>
     
     <item>
       <title>RStudio Snippet - Table to Clipboard</title>

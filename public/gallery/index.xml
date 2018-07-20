@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>true</copyright>
-    <lastBuildDate>Sun, 14 Jan 2018 15:48:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://jasonfabris.com/gallery/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Four Accidents</title>
+      <link>http://jasonfabris.com/gallery/four_accidents/</link>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/four_accidents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gravity 1</title>
+      <link>http://jasonfabris.com/gallery/grav1/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/grav1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expanding Green</title>
+      <link>http://jasonfabris.com/gallery/exp_rad_green/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/exp_rad_green/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Lines</title>
+      <link>http://jasonfabris.com/gallery/redline1/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jasonfabris.com/gallery/redline1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cross2</title>
