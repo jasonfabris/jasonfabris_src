@@ -4,6 +4,6 @@ title: "Cross Section 1"
 image: "wobbly_10by10.png"
 alt: "First cross-section"
 color: ""
-link1: ""
+link1: "images/wobbly_10by10.png"
 link2: ""
 ---
